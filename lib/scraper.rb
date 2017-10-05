@@ -15,7 +15,6 @@ class Scraper
       # this returns the array
     end
 
-
     def make_courses
       self.get_courses.each do |post|
       #was: doc.css(".post").each do |post|
@@ -24,10 +23,7 @@ class Scraper
         course.schedule = post.css(".date").text
         course.description = post.css("p").text
       end
-
     end
-
-
 
     def print_courses
     self.make_courses
