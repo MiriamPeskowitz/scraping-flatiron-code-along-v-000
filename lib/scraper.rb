@@ -12,7 +12,7 @@ class Scraper
 
     def get_courses
       self.get_page.css(".post")
-      # this returns the array 
+      # this returns the array
     end
 
 
